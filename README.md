@@ -55,11 +55,21 @@ and open `Notebook/DataVine_Analytics.ipynb`.
 
 ## Notebook Workflow
 
-1. **Data Preparation** — load Wine, Chickwts, and USArrests; check for missing values, duplicates, and inconsistent categories; standardize numeric features (z-score); summarize structure.
-2. **k-NN Classification (Wine)** — encode target labels, apply PCA retaining 95% variance, tune k-value/distance metric/weighting via `GridSearchCV`, train and evaluate the final classifier (classification report, accuracy, confusion matrix, PCA scatter).
-3. **Recommendation System (Chickwts)** — standardize weight, reduce to 1 principal component, compute cosine similarity between feed-type profiles, generate top-N feed recommendations.
-4. **Clustering (USArrests)** — standardize features, select the top 3 by variance, reduce to 2 principal components, determine cluster count via the elbow method (K-Means) and BIC (GMM), fit both models, visualize and compare, profile clusters by state.
-5. **Evaluation & Interpretation** — a stakeholder-facing summary pulling every reported metric directly from the fitted models and computed variables above.
+1. **Data Preparation:**
+
+   - Load Wine, Chickwts, and USArrests; check for missing values, duplicates, and inconsistent categories; standardize numeric features (z-score); summarize structure.
+3. **k-NN Classification (Wine):**
+
+   - Encode target labels, apply PCA retaining 95% variance, tune k-value/distance metric/weighting via `GridSearchCV`, train and evaluate the final classifier (classification report, accuracy, confusion matrix, PCA scatter).
+5. **Recommendation System (Chickwts):**
+
+   - Standardize weight, reduce to 1 principal component, compute cosine similarity between feed-type profiles, generate top-N feed recommendations.
+7. **Clustering (USArrests):**
+
+   - Standardize features, select the top 3 by variance, reduce to 2 principal components, determine cluster count via the elbow method (K-Means) and BIC (GMM), fit both models, visualize and compare, profile clusters by state.
+9. **Evaluation & Interpretation:**
+
+   - A stakeholder-facing summary pulling every reported metric directly from the fitted models and computed variables above.
 
 ## Known Limitations
 
